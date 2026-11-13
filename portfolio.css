@@ -33,13 +33,16 @@ body{
 
 .nav-links{
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
 }
 
 .nav-links a{
     color: #cdb5e1;
     text-decoration: none;
     font-weight: 500;
+    white-space: nowrap;
     transition: color 0.3 ease, transform 0.2 ease;
 }
 
@@ -438,7 +441,7 @@ main{
     color: #94a3b8;
 }
 
-@media (min-width: 375px)and (max-width: 768px) {
+@media (max-width: 768px) {
     .hero {
     flex-direction: column-reverse;
     text-align: center;
@@ -448,9 +451,9 @@ main{
     grid-template-columns: 1fr;
     }
     
-    .navbar
-    {
-    flex-direction: column-reverse;
-    text-align: center;
-    }
+    .navbar {
+    flex-direction: column;
+    gap: 14px;
+    padding: 16px 5%;
+  }
 }
